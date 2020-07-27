@@ -10,7 +10,7 @@ function drawClock()
     var grad;
     ctx.beginPath();
     ctx.arc(0, 0, radius, 0, 2*Math.PI);
-    ctx.fillStyle = 'green';
+    ctx.fillStyle = ' #000080';
     ctx.fill();
     grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
     grad.addColorStop(0, 'white');
@@ -21,7 +21,7 @@ function drawClock()
     ctx.stroke();
     ctx.beginPath();
     ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
-    ctx.fillStyle='blue'
+    ctx.fillStyle='black'
     ctx.fill();
 }
   
@@ -36,7 +36,7 @@ function drawClock()
       ctx.rotate(ang);
       ctx.translate(0, -radius*0.85);
       ctx.rotate(-ang);
-      ctx.fillStyle='black'
+      ctx.fillStyle='wheat'
       ctx.fillText(num.toString(), 0, 0);
       ctx.rotate(ang);
       ctx.translate(0, radius*0.85);
@@ -54,15 +54,15 @@ function drawClock()
       hour=(hour*Math.PI/6)+
       (minute*Math.PI/(6*60))+
       (second*Math.PI/(360*60));
-      ctx.strokeStyle='black'
+      ctx.strokeStyle='yellow'
       drawHand(ctx, hour, radius*0.5, radius*0.07);
       //minute
       minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
-      ctx.strokeStyle='black'
+      ctx.strokeStyle='yellow'
       drawHand(ctx, minute, radius*0.8, radius*0.07);
       // second
       second=(second*Math.PI/30);
-      ctx.strokeStyle='yellow'
+      ctx.strokeStyle='red'
       drawHand(ctx, second, radius*0.9, radius*0.02);
   }
   

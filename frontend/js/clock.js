@@ -54,15 +54,15 @@ function drawClock()
       hour=(hour*Math.PI/6)+
       (minute*Math.PI/(6*60))+
       (second*Math.PI/(360*60));
-      ctx.strokeStyle='yellow'
+      ctx.strokeStyle='orange'
       drawHand(ctx, hour, radius*0.5, radius*0.07);
       //minute
       minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
-      ctx.strokeStyle='yellow'
+      ctx.strokeStyle='green'
       drawHand(ctx, minute, radius*0.8, radius*0.07);
       // second
       second=(second*Math.PI/30);
-      ctx.strokeStyle='red'
+      ctx.strokeStyle='white'
       drawHand(ctx, second, radius*0.9, radius*0.02);
   }
   

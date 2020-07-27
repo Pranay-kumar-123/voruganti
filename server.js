@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static(__dirname+'/frontend'));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname+'/frontend/html/index.html');
+  res.sendFile(__dirname+'/frontend/html/clock.html');
 });
 app.get('/text-tags', function(req, res){
   res.sendFile(__dirname+'/frontend/html/texttags.html');

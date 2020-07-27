@@ -62,7 +62,7 @@ function drawClock()
       drawHand(ctx, minute, radius*0.8, radius*0.07);
       // second
       second=(second*Math.PI/30);
-      ctx.strokeStyle='black'
+      ctx.strokeStyle='yellow'
       drawHand(ctx, second, radius*0.9, radius*0.02);
   }
   

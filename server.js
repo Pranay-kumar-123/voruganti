@@ -11,7 +11,9 @@ app.get('/text-tags', function(req, res){
 app.get('/clock', function(req, res){
   res.sendFile(__dirname+'/frontend/html/clock.html');
 });
-
+app.get('/tambola', function(req, res){
+  res.sendFile(__dirname+'/frontend/html/tambola.html');
+});
 var port= process.env.PORT  || 3000;
 app.listen(port, function(){
     console.log("Site Running on http://localhost:"+port);

@@ -1,5 +1,16 @@
 
 #board
 {
-    background-image: url("https://media.istockphoto.com/photos/brown-wood-texture-dark-wooden-abstract-background-picture-id1137996207?k=6&m=1137996207&s=612x612&w=0&h=Eli8yvjTkBpkkT7QZj_hd2wbdKojeNHcxmo209SN1MM=");
+    background-image: url("");
+margin-left:550px;
+}
+
+body
+{
+    background-image: url("https://i.pinimg.com/originals/25/4e/d7/254ed747f4d08b05d9325950aeac57a9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 40px;
 }
